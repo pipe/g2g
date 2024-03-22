@@ -104,3 +104,11 @@ If the light sensor is not available you could try this https://uk.farnell.com/d
 
 ### Prototype
 ![Picture of a breadboarded prototype on a wooden desk](./prototype.jpeg)
+
+### Some numbers
+
+2 person calls, from an m1 mac mini with a picam to an ipad
+
+Zoom 267ms
+Galene 294ms
+rendezvous.family 255ms
