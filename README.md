@@ -102,3 +102,5 @@ We did not add a TFT display since this would probably be in view and change the
 
 If the light sensor is not available you could try this https://uk.farnell.com/dfrobot/sen0043/analog-ambient-light-sensor-arduino/dp/3517892
 
+### Prototype
+![Picture of a breadboarded prototype on a wooden desk](./prototype.jpeg)
