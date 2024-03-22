@@ -53,7 +53,7 @@ sudo pip3 install Adafruit_BBIO
 ```
 
 ### Theory
-Based on a [blogpost by Vay] (https://medium.com/vay-technology/how-to-measure-glass-to-glass-video-latency-13256037e552)
+Based on a [blogpost by Vay](https://medium.com/vay-technology/how-to-measure-glass-to-glass-video-latency-13256037e552)
 
 The idea is that we point the camera under test at the LED which flashes, the Photosensor (LCR) is placed on the display screen over the image of the LED.
 When the LED flashes it will cause fluctuations in the voltage on the analog input A0. By rapidly polling the value on A0 we can detect when the image of the LED dims.
@@ -80,10 +80,10 @@ The G2G latency will be displayed.
 
 ### How it works 
 
-The code tries to calibrate the brightness with a single long flash and calculates the max, min and median
+The code tries to calibrate the brightness with a single long flash and calculates the max, min and mean
 values of the input voltage in that period, leaving the LED on.
 
-If the max-min is > 25% then it switches the LED off and polls the input until it drops below the median value calculated in the first step.
+If the max-min is > 25% then it switches the LED off and polls the input until it drops below the mean value calculated in the first step.
 it records the time difference, turns the LED back on and waits 1 second. It repeats this 50 times.
 
 The reported value is the average of these 50 values.
